@@ -7,8 +7,7 @@
     flex-direction: column;
   }
   .production__nav-item {
-    margin-right: 10px;
-    margin-left: 10px;
+    text-align: center;
   }
   .production__inner {
     flex-direction: column;
@@ -19,6 +18,7 @@
     font-size: 25px;
     line-height: 30px;
   }
+
   .production__nav-item {
     font-size: 19px;
     line-height: 23px;
@@ -58,7 +58,7 @@
     margin-bottom: 60px;
   }
   .seafood__blocks{
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto
   }
 
@@ -76,7 +76,7 @@
     align-items: center;
   }
   .contacts__block{
-    width: 350px;
+    max-width: 350px;
     margin: 0 auto;
     text-align: center;
   }
@@ -101,6 +101,7 @@
     width: 100%;
     position: absolute;
     top: 130px;
+    left: 0;
   }
   .header__top {
     background-color: #fff;
@@ -168,8 +169,7 @@
 }
 
 @media (max-width: 500px) {
-  .header__article-slider {
-  }
+
   .header__article-title {
     font-size: 35px;
     line-height: 40px;
@@ -180,9 +180,6 @@
     width: 340px;
     margin: auto;
   }
-  .header__article-inner {
-  }
-
   .header__article-slider {
     max-width: 530px;
     margin-bottom: 40px;
@@ -191,9 +188,8 @@
   .header__article-button {
     margin: auto;
     display: block;
-    transform: translateY(-70px);
+    transform: translateY(-50px);
   }
-  .header__bottom .slick-next {
-    bottom: 47px;
-  }
+  
+  
 }

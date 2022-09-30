@@ -14,6 +14,7 @@ button {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
 }
 .header {
   margin-top: 27px;
@@ -40,15 +41,35 @@ button {
 }
 .header__phone{
   z-index: 1;
+  cursor: pointer;
+}
+.header__phone-img:hover{
+  animation: rotate 1s;
+}
+@keyframes rotate {
+  20%{
+    transform: rotate(20deg);
+  }
+  40%{
+    transform: rotate(-20deg);
+  }
+  60%{
+    transform: rotate(20deg);
+  }
+  80%{
+    transform: rotate(-20deg);
+  }
 }
 .logo{
   z-index: 1;
 }
 .header__top {
   display: flex;
+  padding: 0 20px;
 }
 .header__menu {
   margin: 0 105px 0 174px;
+  left: 0;
 }
 
 .menu__list {
@@ -71,16 +92,6 @@ button {
   display: flex;
   justify-content: space-between;
   max-height: 882px;
-}
-.header__languages {
-  cursor: pointer;
-  position: absolute;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: white;
-  bottom: 30px;
-  right: 30px;
 }
 .header__article-title {
   font-weight: 700;
@@ -121,7 +132,11 @@ button {
   margin-left: 112px;
   transform: translateY(-100px);
 }
-
+.header__article-button:hover{
+  transition: .4s;
+  background-color: #fff;
+  color: #001e64;
+}
 .header__bottom .slick-dots {
   list-style: none;
   position: absolute;
@@ -242,11 +257,17 @@ button {
   font-size: 24px;
   line-height: 32px;
   border: 1px solid #001e64;
-  padding: 14px 85px;
+  width: 100%;
+  padding: 15px 0;
   border-radius: 20px;
   color: #001e64;
   background: transparent;
   cursor: pointer;
+}
+.production__button:hover{
+  transition: .3s;
+  color: white;
+  background-color: #001e64;
 }
 .production .slick-arrow {
   background-image: url("/images/product-prev.svg");
@@ -406,6 +427,16 @@ button {
 }
 .footer__social-item + .footer__social-item {
   padding-left: 10px;
+}
+.instagram path{
+  fill: rgb(180, 180, 180);
+}
+.facebook:hover path,
+.instagram:hover path,
+.whatsup:hover path,
+.telegram:hover path{
+  transition: .3s;
+  fill: #001e64;
 }
 .menu__list {
   list-style: none;

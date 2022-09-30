@@ -49,7 +49,7 @@ $(function () {
             slidesToScroll: 1,
             vertical: false,
             arrows: false,
-            centerMode: true,
+            centerMode: false,
             dots: true
           },
         },
